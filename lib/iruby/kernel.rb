@@ -16,7 +16,7 @@ module IRuby
       #puts 'Starting the kernel'
       #puts config
       #puts 'Use Ctrl-\\ (NOT Ctrl-C!) to terminate.'
-
+      require 'quattro'
       Kernel.instance = self
 
       c = ZMQ::Context.new
